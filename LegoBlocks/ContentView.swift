@@ -50,11 +50,26 @@ struct ContentView_Previews: PreviewProvider {
 struct NewCell: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Text")
-                .font(.title2)
-            .bold()
-            Text("Placeholder")
-                .foregroundColor(Color.gray)
+            HStack {
+                Image(systemName: "photo")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .frame(width: 44, height: 44)
+                VStack(alignment: .leading) {
+                    Text("Text")
+                        .font(.title2)
+                    .bold()
+                    Text("Placeholder")
+                        .foregroundColor(Color.gray)
+                }
+            }
+            Text("Detail Text")
+            Image(systemName: "photo")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fill)
+                .frame(maxHeight: 240)
+                .clipped()
         }
     }
 }
