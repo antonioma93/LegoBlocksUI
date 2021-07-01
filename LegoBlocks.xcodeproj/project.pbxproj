@@ -14,6 +14,7 @@
 		4D6D663D268DCC9400B74C6F /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D663C268DCC9400B74C6F /* NewsCell.swift */; };
 		4D6D6641268DED2500B74C6F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D6640268DED2500B74C6F /* Article.swift */; };
 		4D6D6643268DEECB00B74C6F /* Article+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D6642268DEECB00B74C6F /* Article+Mock.swift */; };
+		4D6D6645268DF54600B74C6F /* NewsCell+Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D6644268DF54600B74C6F /* NewsCell+Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4D6D663C268DCC9400B74C6F /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		4D6D6640268DED2500B74C6F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		4D6D6642268DEECB00B74C6F /* Article+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+Mock.swift"; sourceTree = "<group>"; };
+		4D6D6644268DF54600B74C6F /* NewsCell+Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsCell+Article.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6D6630268DA7D300B74C6F /* ContentView.swift */,
+				4D6D6644268DF54600B74C6F /* NewsCell+Article.swift */,
 				4D6D663C268DCC9400B74C6F /* NewsCell.swift */,
 			);
 			path = Views;
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D6D6641268DED2500B74C6F /* Article.swift in Sources */,
+				4D6D6645268DF54600B74C6F /* NewsCell+Article.swift in Sources */,
 				4D6D6631268DA7D300B74C6F /* ContentView.swift in Sources */,
 				4D6D663D268DCC9400B74C6F /* NewsCell.swift in Sources */,
 				4D6D6643268DEECB00B74C6F /* Article+Mock.swift in Sources */,
