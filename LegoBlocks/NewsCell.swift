@@ -8,24 +8,30 @@
 import SwiftUI
 
 struct NewsCell: View {
+    let image: Image
+    let text: Text
+    let detailText: Text
+    let tertiaryText: Text
+    let largeImage: Image
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(systemName: "photo")
+                image
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(10)
                     .frame(width: 44, height: 44)
                 VStack(alignment: .leading) {
-                    Text("Text")
+                    text
                         .font(.title2)
                     .bold()
-                    Text("Placeholder")
+                    tertiaryText
                         .foregroundColor(Color.gray)
                 }
             }
-            Text("Detail Text")
-            Image(systemName: "photo")
+            detailText
+            largeImage
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fill)
                 .frame(maxHeight: 240)
@@ -36,7 +42,11 @@ struct NewsCell: View {
 
 struct NewsCell_Previews: PreviewProvider {
     static var previews: some View {
-        NewsCell()
+        NewsCell(image: Image(systemName: "photo"),
+                 text: Text("Text"),
+                 detailText: Text("Detail Text"),
+                 tertiaryText: Text("Tertiary Text"),
+                 largeImage: Image(systemName: "photo"))
             .previewLayout(.sizeThatFits)
     }
 }
