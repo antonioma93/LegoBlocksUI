@@ -20,19 +20,22 @@ struct ContentView: View {
                 }
                 .navigationTitle("News")
             }
-            .tabItem { Text("News") }.tag(1)
+            .tabItem { Label("News", systemImage: "newspaper") }
+            .tag(1)
             
             NavigationView {
                 Text("Tab Content 2")
                     .navigationTitle("Chat")
             }
-            .tabItem { Text("Products") }.tag(2)
+            .tabItem { Label("Products", systemImage: "cart") }
+            .tag(2)
             
             NavigationView {
                 Text("Tab Content 3")
                     .navigationTitle("Chat")
             }
-            .tabItem { Text("Chat") }.tag(3)
+            .tabItem { Label("Chat", systemImage: "message.circle") }
+            .tag(3)
         }
         .accentColor(.red)
     }
