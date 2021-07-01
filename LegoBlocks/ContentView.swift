@@ -13,7 +13,7 @@ struct ContentView: View {
             NavigationView {
                 List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                     NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        NewCell()
+                        NewsCell()
                     }
                 }
                 .navigationTitle("News")
@@ -41,35 +41,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NewCell()
-            .previewLayout(.sizeThatFits)
         ContentView()
-    }
-}
-
-struct NewCell: View {
-    var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "photo")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                    .frame(width: 44, height: 44)
-                VStack(alignment: .leading) {
-                    Text("Text")
-                        .font(.title2)
-                    .bold()
-                    Text("Placeholder")
-                        .foregroundColor(Color.gray)
-                }
-            }
-            Text("Detail Text")
-            Image(systemName: "photo")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .frame(maxHeight: 240)
-                .clipped()
-        }
     }
 }
