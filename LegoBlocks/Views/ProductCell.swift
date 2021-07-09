@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct ProductCell: View {
+    let image: Image
+    let text: Text
+    let detailText: Text
+    let tertiaryText: Text
+
     var body: some View {
         HStack {
-            Image(systemName: "photo")
+            image
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 60)
             VStack(alignment: .leading) {
-                Text(/*@START_MENU_TOKEN@*/"Text"/*@END_MENU_TOKEN@*/)
+                text
                     .font(.title2)
                 .bold()
-                Text(/*@START_MENU_TOKEN@*/"Detail Text"/*@END_MENU_TOKEN@*/)
+                text
                     .foregroundColor(Color.gray)
                 HStack {
-                    Text("Tertiary Text")
+                    tertiaryText
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text("Buy©")
+                        Text("Buy")
                     }
                 }
             }
@@ -33,7 +38,10 @@ struct ProductCell: View {
 
 struct ProductCell_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCell()
+        ProductCell(image: Image(systemName: "photo"),
+                    text: Text("Text"),
+                    detailText: Text("Detail Text"),
+                    tertiaryText: Text("Tertiary Text"))
             .previewLayout(.sizeThatFits)
     }
 }
